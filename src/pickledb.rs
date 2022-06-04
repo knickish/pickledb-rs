@@ -17,7 +17,7 @@ mod imports {
 use imports::*;
 
 /// An enum that determines the policy of dumping PickleDb changes into the file
-
+#[derive(Debug, Clone, Copy)]
 pub enum PickleDbDumpPolicy {
     /// Never dump any change, file will always remain read-only
     NeverDump,
